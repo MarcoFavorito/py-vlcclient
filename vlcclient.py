@@ -1,4 +1,5 @@
-# coding: utf-8
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
     VLCClient
     ~~~~~~~~~
@@ -247,7 +248,7 @@ def main():
 
     try:
         command = getattr(vlc, command_name)
-        argspec = inspect.getargspec(command)
+        argspec = inspect.getfullargspec(command)
         cli_args = sys.argv[3:]
         cmd_args = argspec.args[1:]
 

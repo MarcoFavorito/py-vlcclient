@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
 
 
-with open("README.rst") as f:
+with open("README.md") as f:
     readme = f.read()
 
 
@@ -15,6 +16,7 @@ setup(
     author='Michael Mayr',
     author_email='michael@michfrm.net',
     py_modules=['vlcclient'],
+    scripts=["vlcclient.py"],
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: MIT License',
